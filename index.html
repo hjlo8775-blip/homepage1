@@ -1,23 +1,55 @@
+HTML
 <!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Web Log</title>
+    <title>モノづくりと趣味の記録</title>
     <style>
-        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: auto; padding: 20px; background: #f9f9f9; color: #333; }
-        header { border-bottom: 2px solid #333; padding-bottom: 10px; margin-bottom: 20px; }
-        section { background: #fff; padding: 20px; margin: 20px 0; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
-        h1, h2 { margin-top: 0; }
+        body { font-family: 'Helvetica Neue', Arial, sans-serif; line-height: 1.7; max-width: 800px; margin: auto; padding: 30px 20px; background: #f4f6f9; color: #333; }
+        header { text-align: center; padding-bottom: 20px; margin-bottom: 30px; border-bottom: 3px solid #333; }
+        h1 { margin: 0; font-size: 2rem; letter-spacing: 1px; }
+        h2 { border-left: 5px solid #0070f3; padding-left: 10px; color: #111; font-size: 1.4rem; }
+        section { background: #fff; padding: 25px; margin: 25px 0; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 8px; }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        @media (max-width: 600px) { .grid { grid-template-columns: 1fr; } }
     </style>
 </head>
 <body>
+
     <header>
         <h1>モノづくりと趣味の記録</h1>
+        <p>日々の作業ログと、こだわりの趣味をまとめる場所</p>
     </header>
+
     <section>
         <h2>Welcome</h2>
-        <p>ここは私の趣味や制作ログをまとめるための簡易ホームページです。これからコンテンツを少しずつ充実させていきます。</p>
+        <p>ここは私の趣味や制作ログをまとめるためのホームページです。サーバー管理不要のモダンな環境（GitHub + Vercel）で構築しています。</p>
     </section>
+
+    <div class="grid">
+        <section>
+            <h2>Audio Room</h2>
+            <p>音響と機材へのこだわりを記録するスペース。</p>
+            <ul>
+                <li>メインスピーカーのセッティング</li>
+                <li>3Dプリンタによるエンクロージャー自作計画</li>
+                <li>ケーブルやルームアコースティックの調整</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Craftsmanship</h2>
+            <p>ものづくりに対する日々の職人ログ。</p>
+            <ul>
+                <li>刃物メーカーでの日々の作業記録</li>
+                <li>一本一本の「本刃付け」と研ぎのこだわり</li>
+                <li>使用している工具やメンテナンスについて</li>
+            </ul>
+        </section>
+    </div>
+
 </body>
 </html>
